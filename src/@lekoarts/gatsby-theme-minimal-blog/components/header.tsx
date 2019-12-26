@@ -9,7 +9,7 @@ import Navigation from "./navigation"
 import replaceSlashes from "../utils/replaceSlashes"
 
 const Header = () => {
-  const { siteTitle, externalLinks, basePath } = useSiteMetadata()
+  const { siteTitle, socialLinks, basePath } = useSiteMetadata()
   const nav = useNavigation()
   const [colorMode, setColorMode] = useColorMode()
   const isDark = colorMode === `dark`
@@ -19,7 +19,7 @@ const Header = () => {
   }
 
   return (
-    <header sx={{ mb: [5, 6] }}>
+    <header sx={{ mb: [5] }}>
       <Flex sx={{ alignItems: `center`, justifyContent: `space-between` }}>
         <Link
           to={replaceSlashes(`/${basePath}`)}
@@ -43,7 +43,7 @@ const Header = () => {
       >
         <Navigation nav={nav} />
         <div sx={{ "a:not(:first-of-type)": { ml: 3 }, fontSize: [1, `18px`] }}>
-          {externalLinks.map(link => (
+          {socialLinks.map(link => (
             <Styled.a key={link.url} href={link.url}>
               {link.name}
             </Styled.a>

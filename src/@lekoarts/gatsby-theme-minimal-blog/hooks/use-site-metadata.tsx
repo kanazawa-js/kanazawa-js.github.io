@@ -11,7 +11,7 @@ type Props = {
       siteLanguage: string
       siteImage: string
       author: string
-      externalLinks: {
+      socialLinks: {
         name: string
         url: string
       }[]
@@ -36,7 +36,7 @@ const useSiteMetadata = () => {
           siteLanguage
           siteImage
           author
-          externalLinks {
+          socialLinks {
             name
             url
           }
