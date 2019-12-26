@@ -2,7 +2,7 @@
 import { jsx } from "theme-ui"
 import { Link } from "gatsby"
 import Layout from "./layout"
-import Hero from "../texts/hero"
+import Hero from "../../../components/hero"
 import Title from "./title"
 import Listing from "./listing"
 import List from "./list"
@@ -26,7 +26,7 @@ const Homepage = ({ posts }: PostsProps) => {
 
   return (
     <Layout>
-      <section sx={{ mb: [5, 6, 7], p: { fontSize: [1, 2, 3], mt: 2 } }}>
+      <section sx={{ p: { fontSize: [1, 2, 3], mt: 2 } }}>
         <Hero />
       </section>
     </Layout>

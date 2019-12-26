@@ -39,7 +39,7 @@ const headingStyles = {
 
 export default {
   ...tailwind,
-  initialColorMode: `light`,
+  initialColorMode: `dark`,
   useCustomProperties: true,
   colors: {
     ...tailwind.colors,
