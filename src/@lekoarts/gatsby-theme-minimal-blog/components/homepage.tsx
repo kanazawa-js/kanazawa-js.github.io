@@ -1,13 +1,10 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import { Link } from "gatsby"
 import Layout from "./layout"
 import Hero from "../../../components/hero"
+import Events from "../../../components/events"
 import Title from "./title"
-import Listing from "./listing"
-import List from "./list"
-import useSiteMetadata from "../hooks/use-site-metadata"
-import replaceSlashes from "../utils/replaceSlashes"
+import useConnpassEvents from "../hooks/use-connpass-events"
 
 type PostsProps = {
   posts: {
@@ -22,12 +19,15 @@ type PostsProps = {
 }
 
 const Homepage = ({ posts }: PostsProps) => {
-  const { basePath, blogPath } = useSiteMetadata()
-
+  const events = useConnpassEvents()
   return (
     <Layout>
       <section sx={{ p: { fontSize: [1, 2, 3], mt: 2 } }}>
         <Hero />
+      </section>
+      <section sx={{ p: { fontSize: [1, 2, 3], mt: 2 } }}>
+        <Title text='イベント情報'/>
+        <Events events={events}/>
       </section>
     </Layout>
   )

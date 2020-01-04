@@ -2,38 +2,53 @@ require(`dotenv`).config({
   path: `.env`,
 })
 
+const siteMetadata = {
+  siteTitle: `kanazawa.js`,
+  siteTitleAlt: `kanazawa.js - 石川県金沢市のJavaScriptコミュニティ「Kanazawa.js」です`,
+  siteHeadline: `kanazawa.js - 石川県金沢市のJavaScriptコミュニティ「Kanazawa.js」です`,
+  siteUrl: `https://kanazawa-js.github.io`,
+  siteDescription: `石川県金沢市のJavaScriptコミュニティ「Kanazawa.js」です`,
+  siteLanguage: `ja`,
+  siteImage: `/banner.png`,
+  author: `@knzw_js`,
+  socialLinks: [
+    {
+      name: `Twitter`,
+      url: `https://twitter.com/knzw_js`
+    },
+    {
+      name: `Connpass`,
+      url: `https://kanazawajs.connpass.com/`
+    }
+  ],
+  navigation: [
+    {
+      title: `コミュニティ概要`,
+      slug: `/about`
+    },
+    {
+      title: `行動規範`,
+      slug: `/code-of-conduct`
+    }
+  ],
+  connpassId: 9508,
+}
+
 module.exports = {
-  siteMetadata: {
-    siteTitle: `kanazawa.js`,
-    siteTitleAlt: `kanazawa.js - 石川県金沢市のJavaScriptコミュニティ「Kanazawa.js」です`,
-    siteHeadline: `kanazawa.js - 石川県金沢市のJavaScriptコミュニティ「Kanazawa.js」です`,
-    siteUrl: `https://kanazawa-js.github.io`,
-    siteDescription: `石川県金沢市のJavaScriptコミュニティ「Kanazawa.js」です`,
-    siteLanguage: `ja`,
-    siteImage: `/banner.png`,
-    author: `@knzw_js`,
-    socialLinks: [
-      {
-        name: `Twitter`,
-        url: `https://twitter.com/knzw_js`
-      },
-      {
-        name: `Connpass`,
-        url: `https://kanazawajs.connpass.com/`
-      }
-    ],
-    navigation: [
-      {
-        title: `コミュニティ概要`,
-        slug: `/about`
-      },
-      {
-        title: `行動規範`,
-        slug: `/code-of-conduct`
-      }
-    ]
-  },
+  siteMetadata,
   plugins: [
+    {
+      resolve: 'gatsby-source-apiserver',
+      options: {
+        typePrefix: 'connpass__',
+        url: `https://connpass.com/api/v1/event/?series_id=${siteMetadata.connpassId}`,
+        method: 'get',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        name: `events`,
+      },
+    },
     {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       options: {},
