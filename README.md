@@ -9,7 +9,7 @@ kanazawa.jsのコミュニティページのリポジトリです。
 - デプロイ
   - GitHub Actions
 - ホスティング
-  - GitHub Pages
+  - Now
 
 ## :arrow_forward: 開発方法
 1. 本リポジトリをクローンし、プロジェクトリポジトリに移動する。
@@ -33,7 +33,7 @@ $ npm run develop
 - `/code-of-conduct` 行動規範
 
 ## :rocket: デプロイ方法
-GitHub Actionsを使用して、GitHub Pagesにデプロイします。 `master`ブランチへの`push`イベントをトリガーに`deploy`ジョブが動作します。
+`master`ブランチへの`push`イベントをトリガーにNowにデプロイを行います。また、Pull Requestを作成した際にプレビュー機能を使用して、変更したサイトの見た目確認を行えます。
 
 ## :ledger: ライセンス
 MIT
