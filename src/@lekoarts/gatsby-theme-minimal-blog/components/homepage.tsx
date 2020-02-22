@@ -5,6 +5,7 @@ import Hero from "../../../components/hero"
 import Events from "../../../components/events"
 import Title from "./title"
 import useConnpassEvents from "../hooks/use-connpass-events"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
 type PostsProps = {
   posts: {
@@ -27,7 +28,7 @@ const Homepage = ({ posts }: PostsProps) => {
       </section>
       <section sx={{ p: { fontSize: [1, 2, 3], mt: 2 } }}>
         <Title text='イベント情報'/>
-        <Events events={events}/>
+        直近の開催イベントはありません。
       </section>
     </Layout>
   )
