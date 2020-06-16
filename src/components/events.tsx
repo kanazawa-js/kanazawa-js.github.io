@@ -27,7 +27,7 @@ const Events = ({ events }: EventsProps) => (
           const endedAt = moment(event.ended_at).format('HH:mm')
           return (
             <div key={event.event_id} sx={{ fontSize: [1, 2] }}>
-              <Link sx={{ fontSize: [2, 3]}} href={event.event_url}>{event.title}</Link>
+              <Link sx={{ fontSize: [2, 3]}} href={event.event_url} target="_blank">{event.title}</Link>
               <Text>日時: {startedAt}-{endedAt}</Text>
               <Text>会場: {event.place}</Text>
               <Text>住所: {event.address}</Text>

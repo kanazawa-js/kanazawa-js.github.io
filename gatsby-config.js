@@ -41,7 +41,7 @@ module.exports = {
       resolve: 'gatsby-source-apiserver',
       options: {
         typePrefix: 'connpass__',
-        url: `https://connpass.com/api/v1/event/?series_id=${siteMetadata.connpassId}`,
+        url: `https://connpass.com/api/v1/event/?series_id=${siteMetadata.connpassId}&order=2&count=3`,
         method: 'get',
         headers: {
           'Content-Type': 'application/json'
