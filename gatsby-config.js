@@ -17,6 +17,10 @@ const siteMetadata = {
       url: `https://twitter.com/knzw_js`
     },
     {
+      name: `Github`,
+      url: `https://github.com/kanazawa-js`
+    },
+    {
       name: `Connpass`,
       url: `https://kanazawajs.connpass.com/`
     }
