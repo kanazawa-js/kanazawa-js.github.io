@@ -29,6 +29,10 @@ const siteMetadata = {
     {
       title: `行動規範`,
       slug: `/code-of-conduct`
+    },
+    {
+      title: `イベントレポート`,
+      slug: `/blog`
     }
   ],
   connpassId: 9508,

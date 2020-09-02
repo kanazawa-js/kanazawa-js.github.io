@@ -26,7 +26,7 @@ const Homepage = ({ posts }: PostsProps) => {
         <Hero />
       </section>
       <section sx={{ p: { fontSize: [1, 2, 3], mt: 2 } }}>
-        <Title text='イベント情報'/>
+        <Title text='Event Information'/>
         <Events events={events}/>
       </section>
     </Layout>
