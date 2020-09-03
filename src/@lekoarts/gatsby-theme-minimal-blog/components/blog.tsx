@@ -27,12 +27,9 @@ const Blog = ({ posts }: PostsProps) => {
     <Layout>
       <SEO title="Blog" />
       <Flex sx={{ alignItems: `center`, justifyContent: `space-between`, flexFlow: `wrap` }}>
-        <Heading variant="h2" as="h2">
-          Blog
+        <Heading variant="h3" as="h2">
+          イベントレポート
         </Heading>
-        <Styled.a as={Link} sx={{ variant: `links.secondary` }} to={replaceSlashes(`/${basePath}/${tagsPath}`)}>
-          View all tags
-        </Styled.a>
       </Flex>
       <Listing posts={posts} sx={{ mt: [4, 5] }} />
     </Layout>
