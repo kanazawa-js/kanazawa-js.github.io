@@ -7,7 +7,7 @@ kanazawa.jsのコミュニティページのリポジトリです。
 - フロントエンド
   - GatsbyJS (React)
 - ホスティング
-  - Zeit Now
+  - Github Pages
 
 ## :arrow_forward: 開発方法
 1. 本リポジトリをクローンし、プロジェクトリポジトリに移動する。
@@ -29,9 +29,10 @@ $ npm run develop
 - `/` トップページ
 - `/about` コミュニティ概要
 - `/code-of-conduct` 行動規範
+- `/blog` イベントレポート
 
 ## :rocket: デプロイ方法
-開発中はGitHubでのPull RequestやPushのイベントをトリガーに、Nowにデプロイされ、発行されるプレビューURLで表示確認が可能です。Pull Requestがマージされたタイミングで、本番サイトに自動的にデプロイされます。
+開発中はGitHubのmasterにマージされるとGithub Pages自動的にデプロイされます。
 
 ## :ledger: ライセンス
 MIT
