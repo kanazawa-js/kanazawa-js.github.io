@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "community-page",
-  "description": "kanazawa.jsのコミュニティページです。",
+  "description": "Kanazawa.jsのコミュニティページです。",
   "version": "0.1.4",
   "license": "MIT",
   "starter-name": "gatsby-starter-minimal-blog",
