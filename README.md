@@ -1,7 +1,7 @@
-# kanazawa.js community page
-kanazawa.jsのコミュニティページのリポジトリです。
+# Kanazawa.js community page
+Kanazawa.jsのコミュニティページのリポジトリです。
 
-![kanazawa.js](./static/banner.png)
+![Kanazawa.js](./static/banner.png)
 
 ## :computer: 技術スタック
 - フロントエンド

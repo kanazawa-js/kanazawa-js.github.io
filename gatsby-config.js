@@ -1,11 +1,11 @@
 require(`dotenv`).config({
   path: `.env`,
-})
+});
 
 const siteMetadata = {
-  siteTitle: `kanazawa.js`,
-  siteTitleAlt: `kanazawa.js - 石川県金沢市のJavaScriptコミュニティ「Kanazawa.js」です`,
-  siteHeadline: `kanazawa.js - 石川県金沢市のJavaScriptコミュニティ「Kanazawa.js」です`,
+  siteTitle: `Kanazawa.js`,
+  siteTitleAlt: `Kanazawa.js - 石川県金沢市のJavaScriptコミュニティ「Kanazawa.js」です`,
+  siteHeadline: `Kanazawa.js - 石川県金沢市のJavaScriptコミュニティ「Kanazawa.js」です`,
   siteUrl: `https://kanazawa-js.github.io`,
   siteDescription: `石川県金沢市のJavaScriptコミュニティ「Kanazawa.js」です`,
   siteLanguage: `ja`,
@@ -14,49 +14,49 @@ const siteMetadata = {
   socialLinks: [
     {
       name: `Twitter`,
-      url: `https://twitter.com/knzw_js`
+      url: `https://twitter.com/knzw_js`,
     },
     {
       name: `Facebook`,
-      url: `https://www.facebook.com/kanazawajs/`
+      url: `https://www.facebook.com/kanazawajs/`,
     },
     {
       name: `Github`,
-      url: `https://github.com/kanazawa-js`
+      url: `https://github.com/kanazawa-js`,
     },
     {
       name: `Connpass`,
-      url: `https://kanazawajs.connpass.com/`
-    }
+      url: `https://kanazawajs.connpass.com/`,
+    },
   ],
   navigation: [
     {
       title: `コミュニティ概要`,
-      slug: `/about`
+      slug: `/about`,
     },
     {
       title: `行動規範`,
-      slug: `/code-of-conduct`
+      slug: `/code-of-conduct`,
     },
     {
       title: `イベントレポート`,
-      slug: `/blog`
-    }
+      slug: `/blog`,
+    },
   ],
   connpassId: 9508,
-}
+};
 
 module.exports = {
   siteMetadata,
   plugins: [
     {
-      resolve: 'gatsby-source-apiserver',
+      resolve: "gatsby-source-apiserver",
       options: {
-        typePrefix: 'connpass__',
+        typePrefix: "connpass__",
         url: `https://connpass.com/api/v1/event/?series_id=${siteMetadata.connpassId}&order=2&count=3`,
-        method: 'get',
+        method: "get",
         headers: {
-          'Content-Type': 'application/json'
+          "Content-Type": "application/json",
         },
         name: `events`,
       },
@@ -75,8 +75,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `kanazawa.js`,
-        short_name: `kanazawa.js`,
+        name: `Kanazawa.js`,
+        short_name: `Kanazawa.js`,
         description: `石川県金沢市のJavaScriptコミュニティ「Kanazawa.js」です`,
         start_url: `/`,
         background_color: `#fff`,
@@ -89,4 +89,4 @@ module.exports = {
     `gatsby-plugin-netlify`,
     // `gatsby-plugin-webpack-bundle-analyser-v2`,
   ],
-}
+};
