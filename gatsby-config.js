@@ -17,10 +17,6 @@ const siteMetadata = {
       url: `https://twitter.com/knzw_js`,
     },
     {
-      name: `Facebook`,
-      url: `https://www.facebook.com/kanazawajs/`,
-    },
-    {
       name: `Github`,
       url: `https://github.com/kanazawa-js`,
     },
