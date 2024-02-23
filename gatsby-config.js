@@ -43,18 +43,6 @@ const siteMetadata = {
       slug: `/blog`,
     },
   ],
-  connpassEventPath: ``,
-  connpassEvent: [
-    {
-      event_Id: 310277,
-      title: `Kanazawa.js わいわい開発LT会 #35`,
-      event_url: `https://kanazawajs.connpass.com/event/310277`,
-      started_at: `2020-03-14`,
-      ended_at:
-      place:
-      address:
-    },
-  ],
 };
 
 module.exports = {
