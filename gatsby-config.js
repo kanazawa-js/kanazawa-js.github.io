@@ -1,6 +1,6 @@
 require(`dotenv`).config({
   path: `.env`,
-})
+});
 
 const siteMetadata = {
   siteTitle: `kanazawa.js`,
@@ -14,53 +14,52 @@ const siteMetadata = {
   socialLinks: [
     {
       name: `Twitter`,
-      url: `https://twitter.com/knzw_js`
+      url: `https://twitter.com/knzw_js`,
     },
     {
       name: `Facebook`,
-      url: `https://www.facebook.com/kanazawajs/`
+      url: `https://www.facebook.com/kanazawajs/`,
     },
     {
       name: `Github`,
-      url: `https://github.com/kanazawa-js`
+      url: `https://github.com/kanazawa-js`,
     },
     {
       name: `Connpass`,
-      url: `https://kanazawajs.connpass.com/`
-    }
+      url: `https://kanazawajs.connpass.com/`,
+    },
   ],
   navigation: [
     {
       title: `コミュニティ概要`,
-      slug: `/about`
+      slug: `/about`,
     },
     {
       title: `行動規範`,
-      slug: `/code-of-conduct`
+      slug: `/code-of-conduct`,
     },
     {
       title: `イベントレポート`,
-      slug: `/blog`
-    }
+      slug: `/blog`,
+    },
   ],
-  connpassId: 9508,
-}
+  connpassEventPath: ``,
+  connpassEvent: [
+    {
+      event_Id: 310277,
+      title: `Kanazawa.js わいわい開発LT会 #35`,
+      event_url: `https://kanazawajs.connpass.com/event/310277`,
+      started_at: `2020-03-14`,
+      ended_at:
+      place:
+      address:
+    },
+  ],
+};
 
 module.exports = {
   siteMetadata,
   plugins: [
-    {
-      resolve: 'gatsby-source-apiserver',
-      options: {
-        typePrefix: 'connpass__',
-        url: `https://connpass.com/api/v1/event/?series_id=${siteMetadata.connpassId}&order=2&count=3`,
-        method: 'get',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        name: `events`,
-      },
-    },
     {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       options: {},
@@ -89,4 +88,4 @@ module.exports = {
     `gatsby-plugin-netlify`,
     // `gatsby-plugin-webpack-bundle-analyser-v2`,
   ],
-}
+};
