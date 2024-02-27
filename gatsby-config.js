@@ -3,9 +3,9 @@ require(`dotenv`).config({
 });
 
 const siteMetadata = {
-  siteTitle: `kanazawa.js`,
-  siteTitleAlt: `kanazawa.js - 石川県金沢市のJavaScriptコミュニティ「Kanazawa.js」です`,
-  siteHeadline: `kanazawa.js - 石川県金沢市のJavaScriptコミュニティ「Kanazawa.js」です`,
+  siteTitle: `Kanazawa.js`,
+  siteTitleAlt: `Kanazawa.js - 石川県金沢市のJavaScriptコミュニティ「Kanazawa.js」です`,
+  siteHeadline: `Kanazawa.js - 石川県金沢市のJavaScriptコミュニティ「Kanazawa.js」です`,
   siteUrl: `https://kanazawa-js.github.io`,
   siteDescription: `石川県金沢市のJavaScriptコミュニティ「Kanazawa.js」です`,
   siteLanguage: `ja`,
@@ -14,11 +14,11 @@ const siteMetadata = {
   socialLinks: [
     {
       name: `Twitter`,
-      url: `https://twitter.com/knzw_js`,
+      url: `https://twitter.com/knzw_js`
     },
     {
       name: `Facebook`,
-      url: `https://www.facebook.com/kanazawajs/`,
+      url: `https://www.facebook.com/kanazawajs/`
     },
     {
       name: `Github`,
@@ -40,8 +40,8 @@ const siteMetadata = {
     },
     {
       title: `イベントレポート`,
-      slug: `/blog`,
-    },
+      slug: `/blog`
+    }
   ],
 };
 
@@ -62,8 +62,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `kanazawa.js`,
-        short_name: `kanazawa.js`,
+        name: `Kanazawa.js`,
+        short_name: `Kanazawa.js`,
         description: `石川県金沢市のJavaScriptコミュニティ「Kanazawa.js」です`,
         start_url: `/`,
         background_color: `#fff`,
