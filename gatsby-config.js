@@ -14,7 +14,11 @@ const siteMetadata = {
   socialLinks: [
     {
       name: `Twitter`,
-      url: `https://twitter.com/knzw_js`,
+      url: `https://twitter.com/knzw_js`
+    },
+    {
+      name: `Facebook`,
+      url: `https://www.facebook.com/kanazawajs/`
     },
     {
       name: `Github`,
@@ -36,27 +40,14 @@ const siteMetadata = {
     },
     {
       title: `イベントレポート`,
-      slug: `/blog`,
-    },
+      slug: `/blog`
+    }
   ],
-  connpassId: 9508,
 };
 
 module.exports = {
   siteMetadata,
   plugins: [
-    {
-      resolve: "gatsby-source-apiserver",
-      options: {
-        typePrefix: "connpass__",
-        url: `https://connpass.com/api/v1/event/?series_id=${siteMetadata.connpassId}&order=2&count=3`,
-        method: "get",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        name: `events`,
-      },
-    },
     {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       options: {},
