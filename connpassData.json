@@ -1,6 +1,15 @@
 {
   "events": [
     {
+      "event_Id": 323946,
+      "title": "Kanazawa.js わいわい開発LT会 #37",
+      "event_url": "https://kanazawajs.connpass.com/event/323946/",
+      "started_at": "2024-07-27T14:00:00+09:00",
+      "ended_at": "2024-07-27T17:00:00+09:00",
+      "place": "オンライン",
+      "address": "オンライン"
+    },
+    {
       "event_Id": 322577,
       "title": "Kanazawa.js わいわい開発LT会 #36",
       "event_url": "https://kanazawajs.connpass.com/event/322577/",
@@ -17,15 +26,6 @@
       "ended_at": "2024-02-24T17:00:00+09:00",
       "place": "オンライン",
       "address": "オンライン"
-    },
-    {
-      "event_Id": 301018,
-      "title": "Kanazawa.js わいわい開発LT会 #34【オフライン/懇親会】",
-      "event_url": "https://kanazawajs.connpass.com/event/301018",
-      "started_at": "2023-12-16T14:00:00+09:00",
-      "ended_at": "2023-12-16T17:00:00+09:00",
-      "place": "Nigiwai Space 新保屋",
-      "address": "石川県金沢市安江町1-15"
     }
   ]
 }
